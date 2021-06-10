@@ -48,7 +48,7 @@
 }
 
 .sitenav__link:hover {
-  color: var(--color-coral);
+  color: var(--color-red-coral);
 }
 
 /* HERO */
@@ -69,7 +69,7 @@
   position: absolute;
   top: 0;
   left: -265px;
-  z-index: 1;
+  z-index: -1;
   display: block;
   width: 200px;
   height: 200px;
@@ -83,7 +83,7 @@
   position: absolute;
   top: 355px;
   right: 0;
-  z-index: 1;
+  z-index: -1;
   display: block;
   width: 358px;
   height: 200px;
@@ -104,7 +104,105 @@
 }
 
 .hero-heading--red {
-  color: var(--color-coral);
+  color: var(--color-red-coral);
 }
 
 /* FEATURES */
+
+.features {
+  overflow: hidden;
+  padding: 140px;
+  background-color: var(--color-green-sacramento);
+}
+
+.features__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.features__inner::after {
+  content: '';
+  position: absolute;
+  right: -265px;
+  bottom: -139px;
+  z-index: -1;
+  width: 200px;
+  height: 244px;
+  background-image: url('../img/donut-midnight.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.features-heading {
+  margin-right: 125px;
+  max-width: 445px;
+}
+
+.features-heading::before {
+  content: "";
+  margin-bottom: 54px;
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: var(--color-red-coral);
+}
+
+.features__list {
+  margin: 0;
+  margin-top: 58px;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature::before {
+  content: '';
+  flex-shrink: 0;
+  margin-right: 23px;
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.feature--person::before {
+  background-image: url('../img/icon-person.svg');
+}
+
+.feature--settings::before {
+  background-image: url('../img/icon-settings.svg');
+}
+
+.feature--progress::before {
+  background-image: url('../img/icon-progress.svg');
+}
+
+.feature__text {
+  max-width: 445px;
+}
+
+.feature__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-red-coral);
+}
+
+.feature__desc {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}

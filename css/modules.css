@@ -6,11 +6,11 @@
   --color-text-primary: #fff;
   --color-green-midnight: #014e56;
   --color-green-dark: #002529;
+  --color-green-sacramento: #012f34;
   --color-blue-rapture: #79c8c7;
-  --color-coral: #f67e7e;
+  --color-red-coral: #f67e7e;
   --color-secondary-police-blue: #2c6269;
   --color-secondary-deep-jungle-green: #004047;
-  --color-secondary-sacramento: #012f34;
 }
 
 /* REUSABLES */
@@ -25,6 +25,13 @@
   line-height: 100px;
 }
 
+.heading-secondary {
+  margin: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+}
+
 .paragraph {
   margin: 0;
   display: flex;
@@ -35,7 +42,7 @@
 }
 
 .paragraph::before {
-  content: '';
+  content: "";
   width: 50px;
   height: 4px;
   background-color: var(--color-blue-rapture);
