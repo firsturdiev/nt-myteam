@@ -1,12 +1,36 @@
+/* Bismillohir Rahmonir Rahiym */
+
 /* VARIABLES */
 
 :root {
-  --color-text-primary: #2d314d;
-  --color-text-secondary: #9597a5;
-  --color-primary: #30c88f;
-  --color-white: #fff;
-  --color-bg-content: #f2f2f2;
-  --linear-gradient-primary: linear-gradient(135deg, #33d35e, #2ab6d9);
+  --color-text-primary: #fff;
+  --color-primary-midnight-green: #014e56;
+  --color-primary-light-coral: #f67e7e;
+  --color-secondary-rapture-blue: #79c8c7;
+  --color-secondary-police-blue: #2c6269;
+  --color-secondary-deep-jungle-green: #004047;
+  --color-secondary-sacramento: #012f34;
+  --color-secondary-dark-green: #002529;
+}
+
+/* @FONT-FACE */
+
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Bold.woff2") format("woff2"),
+    url("../fonts/Livvic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-SemiBold.woff2") format("woff2"),
+    url("../fonts/Livvic-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* DEFAULT STYLES */
@@ -24,6 +48,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Livvic", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--color-text-primary);
 }
 
 img {
@@ -71,3 +100,5 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* REUSABLES */
