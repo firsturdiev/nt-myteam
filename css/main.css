@@ -1,5 +1,110 @@
 /* Bismillohir Rahmonir Rahiym */
 
-@import 'modules.css';
+@import "modules.css";
 
+/* SITE-HEADER */
 
+.site-header {
+  padding: 75px 0;
+  background-color: var(--color-green-midnight);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 80px;
+}
+
+.logo-img {
+  display: block;
+}
+
+.sitenav {
+  margin-right: auto;
+}
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-text-primary);
+  transition: color 0.3s ease;
+}
+
+.sitenav__link:hover {
+  color: var(--color-coral);
+}
+
+/* HERO */
+
+.hero {
+  padding: 55px 0 250px;
+  background-color: var(--color-green-midnight);
+  overflow: hidden;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -265px;
+  z-index: 1;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/donut-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__inner::after {
+  content: "";
+  position: absolute;
+  top: 355px;
+  right: 0;
+  z-index: 1;
+  display: block;
+  width: 358px;
+  height: 200px;
+  background-image: url("../img/donut-red.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__text {
+  display: flex;
+}
+
+.hero-heading {
+  flex-shrink: 0;
+  margin-right: 30px;
+  width: 635px;
+  font-size: 100px;
+}
+
+.hero-heading--red {
+  color: var(--color-coral);
+}
+
+/* FEATURES */

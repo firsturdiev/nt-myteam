@@ -4,13 +4,67 @@
 
 :root {
   --color-text-primary: #fff;
-  --color-primary-midnight-green: #014e56;
-  --color-primary-light-coral: #f67e7e;
-  --color-secondary-rapture-blue: #79c8c7;
+  --color-green-midnight: #014e56;
+  --color-green-dark: #002529;
+  --color-blue-rapture: #79c8c7;
+  --color-coral: #f67e7e;
   --color-secondary-police-blue: #2c6269;
   --color-secondary-deep-jungle-green: #004047;
   --color-secondary-sacramento: #012f34;
-  --color-secondary-dark-green: #002529;
+}
+
+/* REUSABLES */
+
+/* TEXT */
+
+.heading-primary {
+  margin: 0;
+  width: 350px;
+  font-weight: bold;
+  font-size: 64;
+  line-height: 100px;
+}
+
+.paragraph {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.paragraph::before {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: var(--color-blue-rapture);
+}
+
+/* ELEMENTS */
+
+.btn {
+  display: inline-block;
+  padding: 10px 33px;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: lowercase;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 24px;
+  transition: 0.3s ease;
+  transition-property: color, background-color;
+}
+
+.btn--light {
+  color: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+}
+
+.btn--light:hover {
+  color: var(--color-green-dark);
+  background-color: var(--color-text-primary);
 }
 
 /* @FONT-FACE */
@@ -100,5 +154,3 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* REUSABLES */

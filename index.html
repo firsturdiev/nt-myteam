@@ -2,28 +2,64 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test</title>
+  <title>myteam</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+  <!-- SITE-HEADER -->
+
   <header class="site-header">
-      <div class="container">
-        <div class="site-header__inner"></div>
+    <div class="container">
+      <div class="site-header__inner">
+        <a class="logo" href="./">
+          <img class="logo-img" src="./img/logo.svg" alt="Myteam logo">
+        </a>
+
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="btn btn--light" href="#">Contact us</a>
       </div>
-    </header>
-  
-    <main class="site-content">
-      <div class="container"></div>
-    </main>
-  
-    <footer class="site-footer">
+    </div>
+  </header>
+
+  <!-- SITE-CONTENT -->
+
+  <main class="site-content">
+    <!-- HERO -->
+
+    <section class="hero">
       <div class="container">
-        <div class="site-footer__inner"></div>
+        <div class="hero__inner">
+          <div class="hero__text">
+            <h1 class="heading-primary hero-heading">Find the <br> best <span class="hero-heading--red">talent</span></h1>
+            <p class="paragraph">Finding the right people and building high performing teams can be hard. Most
+              companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner"></div>
+    </div>
+  </footer>
 </body>
+
 </html>
