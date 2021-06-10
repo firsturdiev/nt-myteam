@@ -57,6 +57,7 @@
   line-height: 28px;
   text-decoration: none;
   text-transform: lowercase;
+  white-space: nowrap;
   background-color: transparent;
   border: 2px solid;
   border-radius: 24px;
