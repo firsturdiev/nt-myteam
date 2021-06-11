@@ -310,5 +310,37 @@
 .review__author-avatar {
   display: block;
   margin: 0 auto;
-  border-radius: 50%;
 }
+
+/* CTA */
+
+.cta {
+  padding: 76px 0;
+  background-color: var( --color-red-coral);
+  overflow: hidden;
+}
+
+.cta__inner {
+  position: relative;
+  z-index: 1;
+  padding: 0 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta__inner::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -165px;
+  width: 200px;
+  height: 244px;
+  background: url('../img/bg-cta.svg') center / contain no-repeat;
+}
+
+.cta-heading {
+  color: var(--color-green-sacramento);
+}
+
+/* SITE-FOOTER */

@@ -13,9 +13,7 @@
   --color-secondary-police-blue: #2c6269;
 }
 
-/* REUSABLES */
-
-/* TEXT */
+/* COMPONENTS */
 
 .heading-primary {
   margin: 0;
@@ -48,8 +46,6 @@
   background-color: var(--color-blue-rapture);
 }
 
-/* ELEMENTS */
-
 .btn {
   display: inline-block;
   padding: 10px 33px;
@@ -65,6 +61,12 @@
   transition-property: color, background-color;
 }
 
+.btn--disabled,
+.btn:disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
 .btn--light {
   color: var(--color-text-primary);
   border-color: var(--color-text-primary);
@@ -73,6 +75,16 @@
 .btn--light:hover {
   color: var(--color-green-dark);
   background-color: var(--color-text-primary);
+}
+
+.btn--dark {
+  color: var(--color-green-sacramento);
+  border-color: var(--color-green-sacramento);
+}
+
+.btn--dark:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-green-sacramento);
 }
 
 /* @FONT-FACE */
