@@ -1,9 +1,12 @@
 /* Bismillohir Rahmonir Rahiym */
 
+/* ABOUT-HERO */
+
 .about-hero {
   padding-top: 45px;
   padding-bottom: 120px;
   background-color: var(--color-green-midnight);
+  overflow: hidden;
 }
 
 .about-hero__inner {
@@ -18,9 +21,10 @@
   position: absolute;
   bottom: -121px;
   right: -265px;
+  z-index: -1;
   width: 200px;
   height: 200px;
-  background: url(../img/bg-about-hero.svg) left top / contain no-repeat;
+  background: url(../img/bg-about-hero.svg) center / contain no-repeat;
 }
 
 .about-hero-heading {
@@ -32,8 +36,37 @@
 
 .directors {
   padding: 140px 0;
+  padding-bottom: 168px;
   text-align: center;
   background-color: var(--color-green-deep-jungle);
+  overflow: hidden;
+}
+
+.directors__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.directors__inner::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  left: -265px;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  background: url(../img/bg-directors-left.svg) center / contain no-repeat;
+}
+
+.directors__inner::after {
+  content: "";
+  position: absolute;
+  bottom: -168px;
+  right: -165px;
+  z-index: -1;
+  width: 147px;
+  height: 100px;
+  background: url(../img/bg-directors-right.svg) center / contain no-repeat;
 }
 
 .directors-heading {
@@ -47,15 +80,18 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 76px;
   list-style: none;
 }
 
 .direstors__item {
   margin-right: 30px;
-  margin-bottom: 48px;
+  /* margin-bottom: 76px; */
 }
 
 .director {
+  position: relative;
+  z-index: 1;
   width: 350px;
 }
 
@@ -67,17 +103,35 @@
 .director__avatar {
   display: block;
   margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .director__name {
+  margin: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
   color: var(--color-blue-rapture);
+  text-transform: capitalize;
 }
 
 .director__job {
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .director__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 56px;
+  height: 56px;
+  background: var(--color-red-coral) url("../img/icon-plus.svg") center / 16px
+    no-repeat;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
