@@ -1,6 +1,7 @@
 /* Bismillohir Rahmonir Rahiym */
 
 @import "modules.css";
+@import "about.css";
 
 /* SITE-HEADER */
 
@@ -108,6 +109,10 @@
   color: var(--color-red-coral);
 }
 
+.hero-heading + .paragraph::before {
+  margin-bottom: 79px;
+  color: var(--color-blue-rapture);
+}
 /* FEATURES */
 
 .features {

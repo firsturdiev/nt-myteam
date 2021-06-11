@@ -1,0 +1,83 @@
+/* Bismillohir Rahmonir Rahiym */
+
+.about-hero {
+  padding-top: 45px;
+  padding-bottom: 120px;
+  background-color: var(--color-green-midnight);
+}
+
+.about-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-hero__inner::after {
+  content: "";
+  position: absolute;
+  bottom: -121px;
+  right: -265px;
+  width: 200px;
+  height: 200px;
+  background: url(../img/bg-about-hero.svg) left top / contain no-repeat;
+}
+
+.about-hero-heading {
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+/* DIRECTORS */
+
+.directors {
+  padding: 140px 0;
+  text-align: center;
+  background-color: var(--color-green-deep-jungle);
+}
+
+.directors-heading {
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.directors__list {
+  margin: 0;
+  margin-right: -30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.direstors__item {
+  margin-right: 30px;
+  margin-bottom: 48px;
+}
+
+.director {
+  width: 350px;
+}
+
+.director__side-front {
+  padding: 32px 24px 56px;
+  background-color: var(--color-green-sacramento);
+}
+
+.director__avatar {
+  display: block;
+  margin: 0 auto;
+}
+
+.director__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-blue-rapture);
+}
+
+.director__job {
+}
+
+.director__button {
+}

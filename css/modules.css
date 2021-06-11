@@ -19,7 +19,7 @@
   margin: 0;
   width: 350px;
   font-weight: bold;
-  font-size: 64;
+  font-size: 64px;
   line-height: 100px;
 }
 
@@ -32,18 +32,17 @@
 
 .paragraph {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   font-size: 18px;
   line-height: 28px;
 }
 
 .paragraph::before {
   content: "";
+  display: block;
+  margin-bottom: 40px;
   width: 50px;
   height: 4px;
-  background-color: var(--color-blue-rapture);
+  background-color: var(--color-red-coral);
 }
 
 .btn {
