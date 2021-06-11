@@ -19,7 +19,7 @@
 .about-hero__inner::after {
   content: "";
   position: absolute;
-  bottom: -121px;
+  bottom: -120px;
   right: -265px;
   z-index: -1;
   width: 200px;
@@ -36,7 +36,6 @@
 
 .directors {
   padding: 140px 0;
-  padding-bottom: 168px;
   text-align: center;
   background-color: var(--color-green-deep-jungle);
   overflow: hidden;
@@ -61,7 +60,7 @@
 .directors__inner::after {
   content: "";
   position: absolute;
-  bottom: -168px;
+  bottom: -140px;
   right: -165px;
   z-index: -1;
   width: 147px;
@@ -78,6 +77,7 @@
   margin: 0;
   margin-right: -30px;
   padding: 0;
+  padding-bottom: 28px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 76px;
@@ -86,7 +86,6 @@
 
 .direstors__item {
   margin-right: 30px;
-  /* margin-bottom: 76px; */
 }
 
 .director {
@@ -134,4 +133,58 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color .5s ease;
+}
+
+.director__button:hover {
+  background-color: var(--color-blue-rapture);
+}
+
+/* CLIENTS */
+
+.clients {
+  padding: 140px 0;
+  background-color: var(--color-green-sacramento);
+  text-align: center;
+}
+
+.clients__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.clients__inner::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  left: -165px;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  background: url(../img/bg-clients.svg) center / contain no-repeat;
+}
+
+.clients-heading {
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.clients__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.clients__item {
+  flex-shrink: 0;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.client-logo {
+  display: block;
 }
