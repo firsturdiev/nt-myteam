@@ -93,7 +93,6 @@
   position: relative;
   z-index: 1;
   width: 350px;
-  min-height: 253px;
   perspective: 1000px;
 }
 
