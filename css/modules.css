@@ -58,6 +58,7 @@
   border-radius: 24px;
   transition: 0.3s ease;
   transition-property: color, background-color;
+  cursor: pointer;
 }
 
 .btn--disabled,
@@ -84,6 +85,16 @@
 .btn--dark:hover {
   color: var(--color-text-primary);
   background-color: var(--color-green-sacramento);
+}
+
+.btn--secondary {
+  color: var(--color-green-dark);
+  background-color: var(--color-text-primary);
+  border: none;
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-blue-rapture);
 }
 
 /* @FONT-FACE */
