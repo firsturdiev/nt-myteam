@@ -385,6 +385,19 @@
   opacity: 0.6;
 }
 
+.site-address__paragraph {
+  margin: 0;
+}
+
+.site-address__tel {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-address__tel:hover {
+  text-decoration: underline;
+}
+
 .social__list {
   margin: 0;
   margin-left: auto;
