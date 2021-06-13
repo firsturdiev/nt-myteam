@@ -2,6 +2,12 @@
 
 @import "modules.css";
 
+/* SITE-CONTENT */ 
+
+.site-content {
+  background-color: var(--color-green-midnight);
+}
+
 /* SITE-HEADER */
 
 .site-header {
